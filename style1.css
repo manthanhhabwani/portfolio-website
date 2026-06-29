@@ -1,0 +1,193 @@
+body {
+  background-color: #0f172a;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #64748b;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 8px 0 8px 0;
+  z-index: 1000;
+  align-items: center;
+  background-color: #0f172a;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  margin-left: 78px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  color: #f8fafc;
+}
+
+.navbar-brand:hover {
+  color: #ff5c00;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  font-family: "space Grotesk", sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f8fafc;
+}
+
+.navbar a:hover {
+  color: #ff5c00;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin-right: 78px;
+}
+
+section {
+  scroll-margin-top: 60px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 0 78px;
+  padding: 78px 78px 0 78px;
+  max-width: 1200px;
+}
+
+.my-img img {
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.my-intro {
+  flex: 1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  color: #64748b;
+}
+
+.my-intro h1 {
+  font-size: 50px;
+  color: #f8fafc;
+}
+
+.my-intro span {
+  color: #ff5c00;
+  padding: 0;
+  font-size: 50px;
+}
+
+.my-intro p {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.section-title {
+  color: #f8fafc;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  margin: auto;
+  padding: 78px 78px 0 78px;
+  max-width: 1200px;
+}
+
+.about-me {
+  margin: 20px auto;
+  padding: 0 78px;
+  max-width: 1200px;
+  font-size: 16px;
+}
+
+.about-me p,
+span {
+  color: #64748b;
+  font-family: "DM Sans", sans-serif;
+  padding: 0 78px;
+  font-size: 20px;
+}
+
+.skill-container {
+  padding: 0 78px;
+  margin: 20px auto;
+  max-width: 1200px;
+  font-size: 20px;
+  color: #64748b;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+}
+
+.skill-container h3 {
+  color: #ff5c00;
+}
+
+.technologies,
+.software {
+  margin: 20px auto;
+  padding: 0 78px;
+  max-width: 1200px;
+  font-size: 20px;
+  color: #64748b;
+  font-family: "DM Sans", sans-serif;
+  width: 400px;
+}
+
+.my-project {
+  margin: 100px auto;
+  padding: 0 78px;
+  max-width: 1200px;
+}
+
+.my-certification {
+  margin: 100px auto;
+  padding: 0 78px;
+  max-width: 1200px;
+  color: #64748b;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+}
+
+.my-certification p {
+  padding: 0 78px;
+}
+
+.certificate-cards {
+  padding: 0 78px;
+}
+
+.certificate-cards a {
+  gap: 10px;
+  color: #f8fafc;
+  padding: 0 78px;
+  text-decoration: none;
+}
+
+.certificate-cards a:hover {
+  color: #ff5c00;
+}
+
+.ending-credits {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #64748b;
+  font-family: "Space Grotesk", sans-serif;
+}
