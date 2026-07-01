@@ -82,14 +82,14 @@ section {
 }
 
 .my-intro h1 {
-  font-size: 50px;
+  font-size: clamp(2rem, 5vw, 3.125rem);
   color: #f8fafc;
 }
 
 .my-intro span {
   color: #ff5c00;
   padding: 0;
-  font-size: 50px;
+  font-size: clamp(2rem, 5vw, 3.125rem);
 }
 
 .my-intro p {
@@ -190,4 +190,65 @@ span {
   gap: 10px;
   color: #64748b;
   font-family: "Space Grotesk", sans-serif;
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+
+  .my-img {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .my-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .my-intro {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .my-intro p{
+    width: 100%;
+    height: auto;
+  }
+  .about-me {
+    flex-direction: column;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .my-img {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .my-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .my-intro {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .my-intro p{
+    width: 100%;
+    height: auto;
+  }
 }
