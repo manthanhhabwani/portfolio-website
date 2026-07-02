@@ -1,0 +1,323 @@
+/* ==========================================
+   1. RESET
+========================================== */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   2. VARIABLES
+========================================== */
+:root{
+
+/*color*/    
+
+--clr-bg:#0f172a;
+--clr-text:#f8fafc;
+--clr-secondary:#64748b;
+--clr-accent:#ff5c00;
+--clr-border:#334155;
+
+/*font*/
+
+--ff-heading:"Space Grotesk",sans-serif;
+--ff-body:"DM Sans",sans-serif;
+
+/*layout*/
+
+--container-width:1200px;
+
+/*radius*/
+
+--radius:20px;
+
+/*spacing*/
+--space-xs:.5rem;
+    --space-sm:1rem;
+    --space-md:2rem;
+    --space-lg:4rem;
+    --space-xl:6rem;
+}
+/* ==========================================
+   3. GLOBAL STYLES
+========================================== */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:var(--clr-bg);
+    color:var(--clr-text);
+    font-family:var(--ff-body);
+    line-height: 1.6;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style-position: inside;
+}
+/* ==========================================
+   4. LAYOUT
+========================================== */
+.container{
+    width:min(100% - 2rem,var(--container-width));
+    margin-inline:auto;
+}
+
+/* ==========================================
+   5. NAVBAR
+========================================== */
+.navbar{
+    position: sticky;
+    top: 0;
+    background:var(--clr-bg);
+    border-bottom: 1px solid var(--clr-border);
+    z-index: 1000;
+}
+
+.navbar-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.navbar-brand{
+    font-family: var(--ff-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr-text);
+    transition: .3s;
+}
+
+.navbar-brand:hover{
+    color: var(--clr-accent);
+}
+
+.navbar-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links a{
+    font-family: var(--ff-heading);
+    transition: .3s;
+}
+
+.navbar-links a:hover{
+    color: var(--clr-accent);
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links svg{
+    width: 24px;
+    height: 24px;
+    transition: .3s;
+}
+
+.social-links a:hover{
+    color: var(--clr-accent);
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: var(--clr-text);
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* ==========================================
+   6. HOME
+========================================== */
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+
+    min-height: calc(100vh - 72px);
+
+    padding-block: var(--space-xl);
+}
+
+.my-img{
+    flex-shrink: 0;
+}
+
+.my-img img{
+    width: 350px;
+    aspect-ratio: 7/10;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.my-intro{
+    flex: 1;
+}
+
+.my-intro h1{
+    font-family: var(--ff-heading);
+    font-size: clamp(2.5rem,6vw,4rem);
+    line-height: 1.1;
+    margin-bottom: var(--space-md)
+}
+
+.my-name{
+    color: var(--clr-accent);
+}
+
+.my-intro p{
+    max-width: 65ch;
+    font-size: 1.125rem;
+    color: var(--clr-secondary);
+    line-height: 1.8;
+}
+/* ==========================================
+   7. ABOUT
+========================================== */
+.about-me{
+    padding-block: var(--space-xl)
+}
+
+.section-title{
+    font-family: var(--ff-heading);
+    font-size: 2rem;
+    margin-bottom: var(--space-lg);
+}
+
+.my-info{
+    max-width: 65ch;
+    color: var(--clr-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-lg);
+}
+
+.about-description{
+    display: block;
+    margin-bottom: var(--space-md);
+    color: var(--clr-secondary);
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--space-lg);
+}
+
+.skill-card{
+    padding: 1.5rem;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius);
+}
+
+.skill-card h3{
+    color: var(--clr-accent);
+    margin-bottom: 1rem;
+    font-family: var(--ff-heading);
+}
+
+.skill-card ul{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+/* ==========================================
+   8. PROJECTS
+========================================== */
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: var(--space-lg);
+}
+
+.project-card{
+    background: #162033;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius);
+    padding: var(--space-md);
+    transition: .3s;
+}
+
+.project-card:hover{
+    transform: translateY(-6px);
+    border-color: var(--clr-accent);
+}
+/* ==========================================
+   9. CERTIFICATIONS
+========================================== */
+.certificate-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap: var(--space-lg);
+}
+
+.certificate-card {
+    padding: var(--space-md);
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius);
+    background: #162033;
+}
+
+.certificate-card h3{
+    font-family: var(--ff-heading);
+    margin-bottom: 1rem;
+}
+
+.certificate-card p{
+    color: var(--clr-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.button{
+    display: inline-block;
+    padding: .7rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(--clr-accent);
+    color: var(--clr-accent);
+    transition: .3s;
+}
+
+.button:hover{
+    background: var(--clr-accent);
+    color: white;
+}
+/* ==========================================
+   10. FOOTER
+========================================== */
+
+
+/* ==========================================
+   11. MEDIA QUERIES
+========================================== */
+@media(max-width: 768px){
+    .navbar-links{
+        display: none;
+    }
+
+    .social-links{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+}

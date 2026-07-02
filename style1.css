@@ -53,6 +53,12 @@ body {
   margin-right: 78px;
 }
 
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 78px;
+}
+
 section {
   scroll-margin-top: 60px;
 }
@@ -114,21 +120,26 @@ section {
 }
 
 .about-me p,
-span {
+.about-me span {
   color: #64748b;
   font-family: "DM Sans", sans-serif;
-  padding: 0 78px;
   font-size: 20px;
 }
 
-.skill-container {
+.my-info span{
   padding: 0 78px;
+}
+
+.skill-container {
   margin: 20px auto;
   max-width: 1200px;
   font-size: 20px;
   color: #64748b;
   font-family: "DM Sans", sans-serif;
   display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .skill-container h3 {
@@ -138,23 +149,20 @@ span {
 .technologies,
 .software {
   margin: 20px auto;
-  padding: 0 78px;
   max-width: 1200px;
   font-size: 20px;
   color: #64748b;
   font-family: "DM Sans", sans-serif;
-  width: 400px;
+  width: auto;
 }
 
 .my-project {
   margin: 100px auto;
-  padding: 0 78px;
   max-width: 1200px;
 }
 
 .my-certification {
   margin: 100px auto;
-  padding: 0 78px;
   max-width: 1200px;
   color: #64748b;
   font-family: "DM Sans", sans-serif;
@@ -162,7 +170,6 @@ span {
 }
 
 .my-certification p {
-  padding: 0 78px;
 }
 
 .certificate-cards {
@@ -202,7 +209,6 @@ span {
     flex-direction: column;
   }
 
-
   .my-img {
     width: 250px;
     margin: 0 auto;
@@ -218,22 +224,34 @@ span {
     margin: 0 auto;
   }
 
-  .my-intro p{
+  .my-intro p {
     width: 100%;
     height: auto;
   }
-  .about-me {
+  .technologies {
     flex-direction: column;
   }
 }
 
 /* Phone */
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
+  .navbar-links,
+  .social-links {
+    display: none;
+  }
+
+  .section-title{
+    padding:0;
+    margin-bottom:20px;
+}
+
   .home-container {
     flex-direction: column;
+    padding: 20px;
   }
   .my-img {
     width: 250px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -243,12 +261,114 @@ span {
   }
 
   .my-intro {
-    width: 250px;
+    width: 100%;
     margin: 0 auto;
   }
 
-  .my-intro p{
+  .my-intro p {
     width: 100%;
     height: auto;
   }
+
+.my-info,
+.my-intro p{
+    line-height:1.7;
+    font-size: 18px;
+}
+
+  .about-me {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about-me span {
+    padding: 0px;
+    margin: 20px;
+  }
+
+  .my-info {
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .technologies,
+  .software {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+}*/
+
+@media (max-width:480px){
+
+    .navbar-links,
+    .social-links{
+        display:none;
+    }
+
+    .home-container{
+        flex-direction:column;
+        padding:20px;
+        gap:30px;
+    }
+
+    .my-img{
+        width:280px;
+        max-width:100%;
+    }
+
+    .my-img img{
+        width:100%;
+        height:auto;
+    }
+
+    .my-intro{
+        width:100%;
+    }
+
+    .my-intro p{
+        width:100%;
+        font-size:18px;
+        line-height:1.7;
+    }
+
+    .about-me{
+        width:100%;
+        padding:20px;
+    }
+
+    .section-title{
+        padding:0;
+        margin-bottom:20px;
+    }
+
+    .my-info{
+        padding:0;
+        font-size:18px;
+        line-height:1.7;
+    }
+
+    .skill-container{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+        padding:20px 0;
+    }
+
+    .technologies,
+    .software{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+
 }
