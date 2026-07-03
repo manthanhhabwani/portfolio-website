@@ -485,6 +485,16 @@ footer {
 
   /* Home */
   .home-container {
+    padding-block: var(--space-lg);
+  }
+
+  .my-img{
+    width: 250px;
+  }
+
+  .my-intro p{
+    max-width: 35ch;
+    margin-inline: auto;
   }
 
   /* About */
