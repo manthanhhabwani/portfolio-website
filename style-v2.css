@@ -437,17 +437,33 @@ footer {
 @media (max-width: 768px) {
   /*Navbar*/
   .navbar-links {
+    display: none;
   }
 
   .social-links {
+    display: none;
   }
 
   .menu-toggle {
+    display: block;
   }
   /*Home*/
   .home-container {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    gap: var(--space-lg);
+    max-width: 45ch;
+    margin-inline: auto;
   }
 
+  .my-img{
+    width: 300px;
+  }
+
+  .my-img img{
+    width: 100%;
+  }
   /*About*/
   .skill-container {
   }
@@ -458,6 +474,7 @@ footer {
 @media (max-width: 480px) {
   /* Navbar */
   .navbar-links {
+    display: none
   }
 
   .social-links {
