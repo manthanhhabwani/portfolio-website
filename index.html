@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Manthan Habwani, Computer Application Graduate interested in AI, Software Engineering and Cyber-Security"
+    />
     <title>Manthan</title>
     <!--<link href="style1.css" rel="stylesheet" />-->
     <link href="style-v2.css" rel="stylesheet" />
@@ -30,7 +34,11 @@
               <a href="#certification">Certifications</a>
             </div>
             <div class="social-links">
-              <a href="https://github.com/manthanhhabwani" alt="Github"
+              <a
+                href="https://github.com/manthanhhabwani"
+                aria-label="Github Profile"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><svg
                   class="w-6 h-6 text-gray-800 dark:text-white"
                   aria-hidden="true"
@@ -49,7 +57,9 @@
               </a>
               <a
                 href="https://www.linkedin.com/in/manthan-habwani/"
-                alt="Linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIN Profile"
                 ><svg
                   class="w-6 h-6 text-gray-800 dark:text-white"
                   aria-hidden="true"
@@ -101,7 +111,9 @@
             </a>-->
               <a
                 href=" https://www.skills.google/public_profiles/472fb048-21cd-4181-a92a-607a5e21e9a5"
-                alt="Google Cloud skill"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google Cloud skill"
                 ><svg
                   class="w-6 h-6 text-gray-800 dark:text-white"
                   aria-hidden="true"
@@ -119,7 +131,9 @@
                 </svg>
               </a>
             </div>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" aria-label="Open Navigation menu">
+              ☰
+            </button>
           </div>
         </nav>
 
@@ -189,7 +203,36 @@
             <div class="container">
               <h2 class="section-title">/projects</h2>
               <div class="project-grid">
-                <article class="project-card"></article>
+                <article class="project-card">
+                  <h3>Portfolio Website</h3>
+                  <p>
+                    Personal portfolio featuring responsive design, reusable CSS
+                    architecture and GitHub Pages deployment.
+                  </p>
+
+                  <ul class="project-tech">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/manthanhhabwani/portfolio-website.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="button"
+                      >Github</a
+                    >
+                    <a
+                      href="https://manthanhhabwani.github.io/portfolio-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="button"
+                      >Live Website</a
+                    >
+                  </div>
+                </article>
               </div>
             </div>
           </section>
@@ -205,39 +248,99 @@
                 </p>
                 <article class="certificate-card">
                   <h3>Google Prompting Essentials</h3>
-                  <a class="button"
+                  <a
+                    class="button"
                     href="https://coursera.org/share/4c1f1991860fb142694a4c66999d4ad1"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >View Certificate</a
                   >
-                  <a class="button"
+                  <a
+                    class="button"
                     href="https://www.credly.com/badges/7af844b5-b6db-4f2f-beb4-59a500a71e56/public_url"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >View Badge</a
                   >
                 </article>
                 <article class="certificate-card">
                   <h3>Google AI Essentials</h3>
-                  <a class="button"
+                  <a
+                    class="button"
                     href="https://coursera.org/share/19eb14dd9b5c0d91e080303dfe2bf5b6"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >View Certificate</a
                   >
-                  <a class="button"
+                  <a
+                    class="button"
                     href="https://www.credly.com/badges/bc5f6a69-f2ff-4fc6-bba3-3c1bedf4bdc7/public_url"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >View Badge</a
                   >
                 </article>
               </div>
             </div>
           </section>
+
+          <!--Contact-->
+          <section id="contact">
+            <div class="container">
+              <h2 class="section-title">/contact</h2>
+              <div class="contact-content">
+                <div class="contact-intro">
+                  <h3>Let's Connect</h3>
+                  <p>
+                    I'm currently exploring Software Engineering, AI, and
+                    Cybersecurity. If you'd like to discuss opportunities,
+                    collaborate on a project, or simply connect, I'd be happy to
+                    hear from you.
+                  </p>
+                </div>
+                <div class="contact-links">
+                  <ul>
+                    <li class="contact-card">
+                      <a href="mailto:manthanhabwani17@gmail.com">
+                        <h4>Email</h4>
+                        <p>manthanhabwani17@gmail.com</p>
+                      </a>
+                    </li>
+                    <li class="contact-card">
+                      <a
+                        href="https://github.com/manthanhhabwani"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <h4>Github</h4>
+                        <p>github.com/manthanhhabwani</p>
+                      </a>
+                    </li>
+                    <li class="contact-card">
+                      <a
+                        href="https://www.linkedin.com/in/manthan-habwani/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><h4>LinkedIN</h4>
+                        <p>linkedin.com/in/manthan-habwani/</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
         <footer>
-          <div id="credits">
-            <div class="ending-credits">
-              <div>Built and Designed by Manthan Habwani.</div>
-              <div>All rights reserved. ©</div>
+          <div class="container">
+            <div class="footer-content">
+              <div class="footer-text">
+                <p>Built and Designed by Manthan Habwani.</p>
+                <p>© All rights reserved.</p>
+              </div>
+              <div class="footer-social">
+                <!--icons  -->
+              </div>
             </div>
           </div>
         </footer>
