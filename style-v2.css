@@ -88,7 +88,7 @@ p {
 #projects,
 #certification,
 #contact {
-  padding: var(--space-md);
+  padding-block: var(--space-md);
 }
 /* ==========================================
    4. LAYOUT
@@ -353,10 +353,6 @@ p {
 /* ==========================================
     10. CONTACT
 ========================================== */
-#contact {
-  padding-block: var(--space-xl);
-}
-
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -459,6 +455,9 @@ footer {
     text-align: center;
     min-height: auto;
     gap: var(--space-lg);
+  }
+
+  .my-intro p{
     max-width: 45ch;
     margin-inline: auto;
   }
@@ -471,8 +470,7 @@ footer {
     width: 100%;
   }
   /*About*/
-  .skill-container {
-  }
+  
   /*Footer*/
 }
 
