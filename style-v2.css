@@ -480,13 +480,7 @@ footer {
   .navbar-links {
     display: none;
   }
-
-  .social-links {
-  }
-
-  .menu-toggle {
-  }
-
+  
   /* Home */
   .home-container {
     padding-block: var(--space-lg);
