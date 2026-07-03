@@ -83,6 +83,13 @@ p {
     line-height: 1.8;
     color: var(--clr-secondary);
 }
+
+#about,
+#projects,
+#certification,
+#contact{
+    padding: var(--space-md);
+}
 /* ==========================================
    4. LAYOUT
 ========================================== */
@@ -227,9 +234,6 @@ p {
 /* ==========================================
    7. ABOUT
 ========================================== */
-.about-me {
-  padding-block: var(--space-xl);
-}
 
 .section-title {
   font-size: 2rem;
