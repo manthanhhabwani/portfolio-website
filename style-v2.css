@@ -84,11 +84,13 @@ p {
   color: var(--clr-secondary);
 }
 
+#home,
 #about,
 #projects,
 #certification,
 #contact {
   padding-block: var(--space-md);
+  scroll-margin-top: 90px;
 }
 /* ==========================================
    4. LAYOUT
