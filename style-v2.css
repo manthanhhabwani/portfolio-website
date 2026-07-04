@@ -31,6 +31,7 @@
   /*layout*/
 
   --container-width: 1200px;
+  --navbar-height: 72px;
 
   /*radius*/
 
@@ -90,7 +91,7 @@ p {
 #certification,
 #contact {
   padding-block: var(--space-md);
-  scroll-margin-top: 90px;
+  scroll-margin-top: calc(var(--navbar-height)+ 1rem);
 }
 /* ==========================================
    4. LAYOUT
@@ -115,7 +116,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 72px;
+  min-height: var(--navbar-height);
 }
 
 .navbar-brand {
