@@ -49,6 +49,7 @@
 ========================================== */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--navbar-height) + 1rem);
 }
 
 body {
@@ -84,14 +85,8 @@ p {
   line-height: 1.8;
   color: var(--clr-secondary);
 }
-
-#home,
-#about,
-#projects,
-#certification,
-#contact {
+section{
   padding-block: var(--space-md);
-  scroll-margin-top: calc(var(--navbar-height)+ 1rem);
 }
 /* ==========================================
    4. LAYOUT
@@ -194,7 +189,7 @@ p {
   justify-content: space-between;
   gap: var(--space-xl);
 
-  min-height: calc(100vh - 72px);
+  min-height: calc(100vh - var(--navbar-height));
 
   padding-block: var(--space-xl);
 }
