@@ -398,7 +398,7 @@ p {
 
 .contact-card p {
   max-width: 65ch;
-  overflow-wrap: break-word ;
+  overflow-wrap: break-word;
   word-break: break-word;
 }
 
@@ -459,7 +459,7 @@ footer {
     gap: var(--space-lg);
   }
 
-  .my-intro p{
+  .my-intro p {
     max-width: 45ch;
     margin-inline: auto;
   }
@@ -472,7 +472,7 @@ footer {
     width: 100%;
   }
   /*About*/
-  
+
   /*Footer*/
 }
 
@@ -482,7 +482,7 @@ footer {
   .navbar-links {
     display: none;
   }
-  
+
   /* Home */
   .home-container {
     padding-block: var(--space-lg);
