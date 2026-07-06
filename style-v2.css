@@ -85,7 +85,7 @@ p {
   line-height: 1.8;
   color: var(--clr-secondary);
 }
-section{
+section {
   padding-block: var(--space-md);
 }
 /* ==========================================
