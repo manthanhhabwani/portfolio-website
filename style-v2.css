@@ -88,6 +88,27 @@ p {
 section {
   padding-block: var(--space-md);
 }
+
+.mobile-menu{
+  display: none;
+  flex-direction: column;
+  gap: var(--space-xs);
+  background: var(--clr-card);
+  margin-top: var(--space-sm);
+  padding: var(--space-sm);
+  
+}
+
+.mobile-menu.active{
+  display: flex;
+}
+
+.mobile-menu a{
+  display: block;
+  border: 1px solid var(var(--clr-border));
+  padding: var(--space-sm
+  );
+}
 /* ==========================================
    4. LAYOUT
 ========================================== */
