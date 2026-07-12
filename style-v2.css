@@ -89,25 +89,23 @@ section {
   padding-block: var(--space-md);
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
   flex-direction: column;
   gap: var(--space-xs);
   background: var(--clr-card);
   margin-top: var(--space-sm);
   padding: var(--space-sm);
-  
 }
 
-.mobile-menu.active{
+.mobile-menu.active {
   display: flex;
 }
 
-.mobile-menu a{
+.mobile-menu a {
   display: block;
   border: 1px solid var(var(--clr-border));
-  padding: var(--space-sm
-  );
+  padding: var(--space-sm);
 }
 /* ==========================================
    4. LAYOUT
@@ -201,6 +199,14 @@ section {
   cursor: pointer;
 }
 
+.menu-toggle span{
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: var(--clr-text);
+  transition: transform 0.3s ease,
+    opacity 0.3s ease;
+}
 /* ==========================================
    6. HOME
 ========================================== */
@@ -466,7 +472,25 @@ footer {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .menu-toggle span{
+    transition: transform 0.3s ease,
+    opacity 0.3s ease;
+  }
+  .menu-toggle.active span:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
   }
   /*Home*/
   .home-container {
