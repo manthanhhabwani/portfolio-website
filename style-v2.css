@@ -90,16 +90,27 @@ section {
 }
 
 .mobile-menu {
-  display: none;
   flex-direction: column;
   gap: var(--space-xs);
   background: var(--clr-card);
-  margin-top: var(--space-sm);
   padding: var(--space-sm);
+  position: absolute;
+  top: calc(100% + var(--space-sm));
+  right: 0;
+  width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .mobile-menu.active {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
 
 .mobile-menu a {
@@ -199,12 +210,13 @@ section {
   cursor: pointer;
 }
 
-.menu-toggle span{
+.menu-toggle span {
   display: block;
   width: 24px;
   height: 3px;
   background: var(--clr-text);
-  transition: transform 0.3s ease,
+  transition:
+    transform 0.3s ease,
     opacity 0.3s ease;
 }
 /* ==========================================
@@ -477,19 +489,20 @@ footer {
     gap: 6px;
   }
 
-  .menu-toggle span{
-    transition: transform 0.3s ease,
-    opacity 0.3s ease;
+  .menu-toggle span {
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
   }
-  .menu-toggle.active span:nth-child(1){
+  .menu-toggle.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
 
-  .menu-toggle.active span:nth-child(2){
+  .menu-toggle.active span:nth-child(2) {
     opacity: 0;
   }
 
-  .menu-toggle.active span:nth-child(3){
+  .menu-toggle.active span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
   /*Home*/
